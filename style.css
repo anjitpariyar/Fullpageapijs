@@ -1,0 +1,58 @@
+body{
+	margin: 0;
+	font-size: 16px;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #fff;
+	color: #313131;
+}
+canvas{
+	height: 600px;
+	width: 67%;
+	border: 10px solid #313131;
+	margin: 2rem 15%;
+}
+#img{
+	height: 90vh;
+	width: 60%;
+	margin: 1rem auto 0;
+	cursor: pointer;
+
+}
+#img:hover p{
+
+}
+#img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+#img figcaption{
+	margin-block-start:1rem;
+	font-size: 2rem; 
+}
+p{
+	display: inline;
+	background-color:
+	#2b2b2b;
+	color:
+	#fff;
+	padding: 1rem 3.4rem 1rem 1rem;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	font-size: 1.4rem;
+	transform: translateY(-50%);
+	clip-path: polygon(0 0, 16rem 0%, 100% 50%, 16rem 100%, 0 100%);
+	-webkit-animation:move .3s ease 1s infinite  alternate forwards;
+	-o-animation:move .3s ease 1s infinite  alternate forwards;
+	animation:move .3s ease 1s infinite  alternate forwards;
+}
+@keyframes move{
+	from{
+		left: -1%;
+	}
+	to{
+		left: 0%;
+	}
+}
